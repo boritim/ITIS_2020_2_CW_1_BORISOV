@@ -14,7 +14,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
 
         let window = UIWindow(windowScene: scene)
-        let viewController = CouncilFlowCoordinator().startViewController()
+        let coordinator = CouncilFlowCoordinator(navigationController: UINavigationController(), factory: ServiceFactorySecondImplementation())
+        let viewController = coordinator.startViewController()
         window.rootViewController = viewController
         self.window = window
         window.makeKeyAndVisible()

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CouncilMemberCell: UICollectionViewCell {
     @IBOutlet private var imageView: UIImageView!
@@ -19,8 +20,10 @@ class CouncilMemberCell: UICollectionViewCell {
         imageView.image = member.imageUrl == nil
             ? #imageLiteral(resourceName: "No-Image-Placeholder")
             : nil
+        imageView.kf.setImage(with: member.imageUrl)
         nameLabel.text = member.name
         rankLabel.text = name(of: member.rank)
+        
     }
 
     private func name(of rank: CouncilMember.Rank) -> String {

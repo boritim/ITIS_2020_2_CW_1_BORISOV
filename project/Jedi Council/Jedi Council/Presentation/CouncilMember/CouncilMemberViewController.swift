@@ -13,6 +13,7 @@ class CouncilMemberViewController: UIViewController {
     @IBOutlet private var rankLabel: UILabel!
     @IBOutlet private var bioLabel: UILabel!
 
+    var presenter: CouncilMemberPresenter?
     private var member: CouncilMemberDetails?
 
     func set(member: CouncilMemberDetails) {
@@ -25,17 +26,11 @@ class CouncilMemberViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let member = member {
-            update(with: member)
-        }
     }
 
     private func update(with member: CouncilMemberDetails) {
         let councilMember = member.councilMember
-        imageView.image = councilMember.imageUrl == nil
-            ? #imageLiteral(resourceName: "No-Image-Placeholder")
-            : nil
+        imageView.kf.setImage(with: member.councilMember.imageUrl, placeholder: UIImage(named: "No-Image-Placeholder"))
         nameLabel.text = councilMember.name
         rankLabel.text = name(of: councilMember.rank)
         bioLabel.text = member.bio
@@ -54,3 +49,4 @@ class CouncilMemberViewController: UIViewController {
         }
     }
 }
+

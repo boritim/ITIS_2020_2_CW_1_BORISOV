@@ -8,27 +8,20 @@
 import UIKit
 
 class CouncilListViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    private let cellId: String = "Cell"
-    @IBOutlet private var collectionView: UICollectionView!
 
-    #warning("Temp implementation")
+    private let cellId: String = "Cell"
+    @IBOutlet var collectionView: UICollectionView!
+    var presenter: CouncilListPresenter?
+    private var members: [CouncilMember] = []
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        service.loadMembers { [self] result in
-            switch result {
-                case .success(let members):
-                    self.members = members
-                    collectionView.reloadData()
-                case .failure(let error):
-                    print(error)
-            }
-        }
+        presenter?.loadData()
     }
 
-    private let service: CouncilService = MockCouncilService()
-    private var members: [CouncilMember] = []
+    func set(members: [CouncilMember]) {
+        self.members = members
+        collectionView.reloadData()
+    }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         members.count
@@ -36,7 +29,7 @@ class CouncilListViewController: UIViewController, UICollectionViewDataSource, U
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? CouncilMemberCell else {
-            fatalError("Could not dequeue cell")
+                fatalError("Could not dequeue cell")
         }
 
         cell.set(member: members[indexPath.item])
@@ -44,15 +37,9 @@ class CouncilListViewController: UIViewController, UICollectionViewDataSource, U
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        service.loadMemberDetails(id: members[indexPath.item].id) { [self] result in
-            switch result {
-                case .success(let memberDetails):
-                    let viewController: CouncilMemberViewController = storyboard!.instantiateViewController(identifier:  "CouncilMemberViewController")
-                    navigationController?.pushViewController(viewController, animated: true)
-                    viewController.set(member: memberDetails)
-                case .failure(let error):
-                    print(error)
-            }
-        }
+        collectionView.deselectItem(at: indexPath, animated: true)
+        guard let presenter = presenter else { return }
+        presenter.moveToDetail?(members[indexPath.item].id)
     }
 }
+

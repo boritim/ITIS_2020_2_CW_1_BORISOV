@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CouncilMemberDetails {
+struct CouncilMemberDetails: Decodable {
     let councilMember: CouncilMember
     let bio: String
 }

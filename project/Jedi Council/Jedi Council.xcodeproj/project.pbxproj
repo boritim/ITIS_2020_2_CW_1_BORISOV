@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004A1D557AB17F9B8AA98E50 /* Pods_Jedi_Council.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF577B31A43A6F96CFB56B4 /* Pods_Jedi_Council.framework */; };
 		AE69C34B25F6A25F00C60CA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE69C34A25F6A25F00C60CA9 /* AppDelegate.swift */; };
 		AE69C34D25F6A25F00C60CA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE69C34C25F6A25F00C60CA9 /* SceneDelegate.swift */; };
 		AE69C35225F6A25F00C60CA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE69C35025F6A25F00C60CA9 /* Main.storyboard */; };
@@ -20,9 +21,18 @@
 		AE69C37F25F6A97300C60CA9 /* MockCouncilService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE69C37E25F6A97300C60CA9 /* MockCouncilService.swift */; };
 		AE92DC9025F6AC4600326E89 /* CouncilMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92DC8F25F6AC4600326E89 /* CouncilMemberCell.swift */; };
 		AE92DC9325F6B21200326E89 /* CouncilMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92DC9225F6B21200326E89 /* CouncilMemberViewController.swift */; };
+		F81BEB9C265CA80B00966608 /* CouncilListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BEB9B265CA80B00966608 /* CouncilListPresenter.swift */; };
+		F81BEB9E265CAE4D00966608 /* CouncilMemberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BEB9D265CAE4D00966608 /* CouncilMemberPresenter.swift */; };
+		F81BEBA0265CB0C000966608 /* RestCouncilService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BEB9F265CB0C000966608 /* RestCouncilService.swift */; };
+		F81BEBA5265CB18D00966608 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BEBA4265CB18D00966608 /* ServiceFactory.swift */; };
+		F81BEBA7265CB19800966608 /* ServiceFactoryFirstImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BEBA6265CB19800966608 /* ServiceFactoryFirstImplementation.swift */; };
+		F81BEBA9265CB1B000966608 /* ServiceFactorySecondImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BEBA8265CB1B000966608 /* ServiceFactorySecondImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BF577B31A43A6F96CFB56B4 /* Pods_Jedi_Council.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jedi_Council.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA379103D18B7B093B53CB3 /* Pods-Jedi Council.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jedi Council.release.xcconfig"; path = "Target Support Files/Pods-Jedi Council/Pods-Jedi Council.release.xcconfig"; sourceTree = "<group>"; };
+		A207A6F26F27296FE3E08F55 /* Pods-Jedi Council.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jedi Council.debug.xcconfig"; path = "Target Support Files/Pods-Jedi Council/Pods-Jedi Council.debug.xcconfig"; sourceTree = "<group>"; };
 		AE69C34725F6A25F00C60CA9 /* Jedi Council.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jedi Council.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE69C34A25F6A25F00C60CA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE69C34C25F6A25F00C60CA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +48,12 @@
 		AE69C37E25F6A97300C60CA9 /* MockCouncilService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCouncilService.swift; sourceTree = "<group>"; };
 		AE92DC8F25F6AC4600326E89 /* CouncilMemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouncilMemberCell.swift; sourceTree = "<group>"; };
 		AE92DC9225F6B21200326E89 /* CouncilMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouncilMemberViewController.swift; sourceTree = "<group>"; };
+		F81BEB9B265CA80B00966608 /* CouncilListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouncilListPresenter.swift; sourceTree = "<group>"; };
+		F81BEB9D265CAE4D00966608 /* CouncilMemberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouncilMemberPresenter.swift; sourceTree = "<group>"; };
+		F81BEB9F265CB0C000966608 /* RestCouncilService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCouncilService.swift; sourceTree = "<group>"; };
+		F81BEBA4265CB18D00966608 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		F81BEBA6265CB19800966608 /* ServiceFactoryFirstImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactoryFirstImplementation.swift; sourceTree = "<group>"; };
+		F81BEBA8265CB1B000966608 /* ServiceFactorySecondImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactorySecondImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +61,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004A1D557AB17F9B8AA98E50 /* Pods_Jedi_Council.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A82428D79D39D1947D952068 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A207A6F26F27296FE3E08F55 /* Pods-Jedi Council.debug.xcconfig */,
+				9BA379103D18B7B093B53CB3 /* Pods-Jedi Council.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AE69C33E25F6A25F00C60CA9 = {
 			isa = PBXGroup;
 			children = (
 				AE69C34925F6A25F00C60CA9 /* Jedi Council */,
 				AE69C34825F6A25F00C60CA9 /* Products */,
+				A82428D79D39D1947D952068 /* Pods */,
+				C5DD31EAC3FEE312373A05DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +116,7 @@
 			children = (
 				AE69C36F25F6A5F700C60CA9 /* CouncilListViewController.swift */,
 				AE92DC8F25F6AC4600326E89 /* CouncilMemberCell.swift */,
+				F81BEB9B265CA80B00966608 /* CouncilListPresenter.swift */,
 			);
 			path = CouncilList;
 			sourceTree = "<group>";
@@ -106,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				AE92DC9225F6B21200326E89 /* CouncilMemberViewController.swift */,
+				F81BEB9D265CAE4D00966608 /* CouncilMemberPresenter.swift */,
 			);
 			path = CouncilMember;
 			sourceTree = "<group>";
@@ -122,10 +152,38 @@
 		AE69C37D25F6A90600C60CA9 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				AE69C37425F6A68D00C60CA9 /* CouncilService.swift */,
-				AE69C37E25F6A97300C60CA9 /* MockCouncilService.swift */,
+				F81BEBA2265CB16F00966608 /* ServiceFactory */,
+				F81BEBA1265CB15B00966608 /* CouncilService */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		C5DD31EAC3FEE312373A05DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BF577B31A43A6F96CFB56B4 /* Pods_Jedi_Council.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F81BEBA1265CB15B00966608 /* CouncilService */ = {
+			isa = PBXGroup;
+			children = (
+				AE69C37425F6A68D00C60CA9 /* CouncilService.swift */,
+				AE69C37E25F6A97300C60CA9 /* MockCouncilService.swift */,
+				F81BEB9F265CB0C000966608 /* RestCouncilService.swift */,
+			);
+			path = CouncilService;
+			sourceTree = "<group>";
+		};
+		F81BEBA2265CB16F00966608 /* ServiceFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F81BEBA4265CB18D00966608 /* ServiceFactory.swift */,
+				F81BEBA6265CB19800966608 /* ServiceFactoryFirstImplementation.swift */,
+				F81BEBA8265CB1B000966608 /* ServiceFactorySecondImplementation.swift */,
+			);
+			name = ServiceFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE69C35B25F6A26000C60CA9 /* Build configuration list for PBXNativeTarget "Jedi Council" */;
 			buildPhases = (
+				A411DD2AC8D0825F3F9CC6CA /* [CP] Check Pods Manifest.lock */,
 				AE69C34325F6A25F00C60CA9 /* Sources */,
 				AE69C34425F6A25F00C60CA9 /* Frameworks */,
 				AE69C34525F6A25F00C60CA9 /* Resources */,
+				157CCA2BB61C5F29AEA40BB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +253,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		157CCA2BB61C5F29AEA40BB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jedi Council/Pods-Jedi Council-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jedi Council/Pods-Jedi Council-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jedi Council/Pods-Jedi Council-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A411DD2AC8D0825F3F9CC6CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jedi Council-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE69C34325F6A25F00C60CA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -201,12 +303,18 @@
 				AE69C37525F6A68D00C60CA9 /* CouncilService.swift in Sources */,
 				AE69C34B25F6A25F00C60CA9 /* AppDelegate.swift in Sources */,
 				AE69C34D25F6A25F00C60CA9 /* SceneDelegate.swift in Sources */,
+				F81BEB9C265CA80B00966608 /* CouncilListPresenter.swift in Sources */,
+				F81BEBA5265CB18D00966608 /* ServiceFactory.swift in Sources */,
 				AE69C37F25F6A97300C60CA9 /* MockCouncilService.swift in Sources */,
 				AE92DC9325F6B21200326E89 /* CouncilMemberViewController.swift in Sources */,
 				AE92DC9025F6AC4600326E89 /* CouncilMemberCell.swift in Sources */,
+				F81BEBA0265CB0C000966608 /* RestCouncilService.swift in Sources */,
+				F81BEBA7265CB19800966608 /* ServiceFactoryFirstImplementation.swift in Sources */,
 				AE69C37825F6A69500C60CA9 /* CouncilMember.swift in Sources */,
+				F81BEB9E265CAE4D00966608 /* CouncilMemberPresenter.swift in Sources */,
 				AE69C37025F6A5F700C60CA9 /* CouncilListViewController.swift in Sources */,
 				AE69C36825F6A30400C60CA9 /* CouncilFlowCoordinator.swift in Sources */,
+				F81BEBA9265CB1B000966608 /* ServiceFactorySecondImplementation.swift in Sources */,
 				AE69C37B25F6A8B600C60CA9 /* CouncilMemberDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,12 +459,14 @@
 		};
 		AE69C35C25F6A26000C60CA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A207A6F26F27296FE3E08F55 /* Pods-Jedi Council.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J62PVJ69GK;
 				INFOPLIST_FILE = "Jedi Council/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,12 +480,14 @@
 		};
 		AE69C35D25F6A26000C60CA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA379103D18B7B093B53CB3 /* Pods-Jedi Council.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J62PVJ69GK;
 				INFOPLIST_FILE = "Jedi Council/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
